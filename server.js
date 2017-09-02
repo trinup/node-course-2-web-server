@@ -21,9 +21,9 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use((req, res, next) => {
-  res.render('maintenance');
-});
+// app.use((req, res, next) => {
+//   res.render('maintenance');
+// });
 
 app.use(express.static(__dirname + '/public'));    //built in express middleware to tell express to serve contents from the provided folder
 
